@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+![Group 13](https://github.com/euBraianBraga/music-box-3-adsa-2024-1/assets/53722984/3791ee6f-bc01-4be4-a698-a34e4e0b3eb2)<svg width="1490" height="300" viewBox="0 0 1490 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="1490" height="300" fill="url(#pattern0)"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Music Box: Uma Aplicação Front-End em React para Exploração Musical
 
-## Available Scripts
+![Badge](https://img.shields.io/badge/Code-react-0366d6?&logo=react) 
+![Badge](https://img.shields.io/badge/Figma-layout-76608a?&logo=api)
+![Badge](https://img.shields.io/badge/API-integration-4c9d1f?&logo=api)
 
-In the project directory, you can run:
 
-### `npm start`
+## Visão Geral
+**Music Box** é uma aplicação web front-end projetada para funcionar como um dicionário musical abrangente. Este projeto visa enriquecer a experiência de aprendizado com React em contextos acadêmicos, especialmente desenvolvido para auxiliar os estudantes da Faculdade [@SPTECH](https://github.com/BandTec) em seus projetos na disciplina de Pesquisa e Inovação. A aplicação se destaca por sua utilização de tecnologias web modernas e práticas avançadas, incluindo React, JavaScript, CSS Modules e integração com API, criando uma plataforma responsiva e amigável para a descoberta musical.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Destaques Técnicos
+O projeto enfatiza os seguintes aspectos e metodologias técnicas avançadas:
+- **Fundamentos do React**: Explorar os princípios centrais do React (como o Virtual DOM e a sintaxe JSX) para desenvolver interfaces web dinâmicas de forma eficaz.
+- **CSS Modular**: Utilizar CSS Modules para estilização específica de componentes, garantindo um código escalável e de fácil manutenção enquanto previne conflitos de estilos.
+- **Proficiência em JavaScript**: Aproveitar os recursos do JavaScript ES6+ para gestão de estados e manipulação de interações, criando uma experiência de usuário fluida.
+- **Arquitetura de Componentes**: Projetar e implementar componentes de UI reutilizáveis, promovendo um processo de desenvolvimento eficiente e aumentando a adaptabilidade da aplicação.
+- **Roteamento e Navegação**: Usar o React Router para uma navegação suave dentro da aplicação, permitindo a construção de uma aplicação de página única (SPA) com múltiplas visões.
+- **Integração com API**: Realizar operações CRUD através da integração com uma API Spring Boot e MockAPI, permitindo a gestão dinâmica de dados e interação dentro da aplicação.
+  
+<img width="100%" src="https://github.com/euBraianBraga/music-box-3-adsa-2024-1/assets/53722984/c54101e5-f2db-4a50-bdfb-306f181445fe"/>
+<img width="50%" src="https://github.com/euBraianBraga/music-box-3-adsa-2024-1/assets/53722984/8bbe2512-c026-4b78-9c19-0ba386e193e1"/> 
+<img width="49%" src="https://github.com/euBraianBraga/music-box-3-adsa-2024-1/assets/53722984/1584ea04-fbfd-460e-b190-e70bad5a2321"/> 
+<img width="50%" src="https://github.com/euBraianBraga/music-box-3-adsa-2024-1/assets/53722984/38c567ba-57aa-4c4b-af10-335c320a00e4"/> 
+<img width="49%" src="https://github.com/euBraianBraga/music-box-3-adsa-2024-1/assets/53722984/df35852e-8830-4d8f-9122-5794e063d3eb"/> 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Layout e Design
+O layout do projeto é cuidadosamente elaborado para oferecer uma experiência de usuário intuitiva e envolvente, apresentando:
+- Um design responsivo que se adapta perfeitamente a diferentes dispositivos e tamanhos de tela.
+- Uma interface elegante e funcional, facilitando o acesso fácil às funcionalidades e informações da aplicação.
+- Representações visuais e elementos interativos, projetados para aumentar o engajamento do usuário e facilitar a exploração de conteúdo musical.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação e Configuração
+Para começar com o **Music Box**, siga estes passos:
+1. **Clonar ou baixar o projeto**: Acesse o repositório e clone ou faça o download do código-fonte para sua máquina local.
+2. **Configuração do Ambiente**: Abra o diretório raiz do projeto (`music-box`) no Visual Studio Code (VS Code) e navegue até o terminal.
+3. **Instalação de Dependências**:
+    ```
+    npm install
+    ```
+4. **Lançamento da Aplicação**:
+    ```
+    npm start
+    ```
+    Este comando compilará o projeto e o lançará em seu navegador web padrão.
 
-### `npm run build`
+## Concepção do Projeto
+- **Criador**: @euBraianBraga (braian.braga@sptech.school)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
