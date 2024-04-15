@@ -26,11 +26,6 @@ body {
     width: 0.8rem; 
 }
 
-
-.botaovermelho {
-    
-}
-
 ::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 6px;

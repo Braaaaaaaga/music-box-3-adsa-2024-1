@@ -1,7 +1,9 @@
-import React from 'react';
+import App from './App';
+import Home from './pages/home/Home';
+import Musicas from "./pages/musicas/Musicas";  
 import "./utils/globals.css";
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Musicas from './pages/musicas/Musicas';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

@@ -11,26 +11,26 @@
     align-items: center;
     background-color: #1e1e1e;
     justify-content: space-between;
-  }
-  
-  .logo-inicio,
-  .logo-fim {
+}
+
+.logo-inicio,
+.logo-fim {
     outline: none;
     display: flex;
     margin: 0 11rem;
     max-height: 80%;
     align-items: center;
-  }
-  
-  .logo-inicio {
+}
+
+.logo-inicio {
     cursor: pointer;
-  }
-  
-  .active {
+}
+
+.active {
     background-color: #E3073C !important;
-  }
-  
-  .navbar button {
+}
+
+.navbar button {
     border: none;
     color: #fff;
     cursor: pointer;
@@ -39,8 +39,8 @@
     border-radius: 5px;
     background-color: #dfa053;
     transition: background-color 0.3s ease;
-  }
-  
-  .navbar button:hover {
+}
+
+.navbar button:hover {
     background-color: #a77940;
-  }
+}

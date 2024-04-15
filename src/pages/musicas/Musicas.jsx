@@ -22,9 +22,9 @@ const Musicas = () => {
         })
     }
 
-    // Exemplo de POST
     /*
-    const novaMusica = {
+    EXEMPLO DE POST 
+        const novaMusica = {
         nomeMusica: "Nova Música",
         artista: "Novo Artista",
         genero: "Novo Gênero",
@@ -41,9 +41,9 @@ const Musicas = () => {
             console.error('Erro ao adicionar música', erro);
         });
 
-
-    PUT
-        const musicaAtualizada = {
+    EXEMPLO DE PUT
+    function atualizarMusica() {
+    const musicaAtualizada = {
         nomeMusica: "Música Atualizada",
         artista: "Artista Atualizado",
         genero: "Gênero Atualizado",
@@ -61,8 +61,11 @@ const Musicas = () => {
         .catch((erro) => {
             console.error('Erro ao atualizar música', erro);
         });
+    }
 
-          const musicaId = "1"; // ID da música a ser deletada
+    EXEMPLO DE DELETE
+    function deletarMusica() {
+    const musicaId = "1"; // ID da música a ser deletada
 
     api.delete(`/caminhoParaMusica/${musicaId}`)
         .then((response) => {
@@ -72,9 +75,9 @@ const Musicas = () => {
         .catch((erro) => {
             console.error('Erro ao deletar música', erro);
         });
+    }
 
     */
-
 
     // useEffect para chamar a função recuperarValorDoCard() quando o componente é montado
     useEffect(() => {
