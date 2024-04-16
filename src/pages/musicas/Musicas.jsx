@@ -6,17 +6,14 @@ import React, { useState, useEffect } from "react"; // Importa React, useState e
 import NavBar from "../../components/navbar/NavBar"; // Importa o componente NavBar
 import CardMusica from "../../components/cardMusica/CardMusica"; // Importa o componente CardMusica
 
-// Define o componente funcional Musicas
 const Musicas = () => {
-    // Utiliza useState para gerenciar o estado dos dados dos cartões de música
     const [cardsData, setCardsData] = useState();
 
-    // Função para recuperar os dados dos cartões de música da API
     function recuperarValorDoCard() {
         api.get().then((response) => {
-            const { data } = response; // Extrai os dados da resposta da API
-            console.log(response) // Exibe a resposta no console para depuração
-            setCardsData(data) // Atualiza o estado com os dados recebidos
+            const { data } = response;
+            console.log(response)
+            setCardsData(data)
         }).catch(() => {
             console.log("Deu erro, tente novamente!") // Caso haja um erro na requisição, exibe uma mensagem no console
         })
@@ -92,11 +89,8 @@ const Musicas = () => {
             <NavBar logoInicio={logo} />
             {/* Contêiner para os cartões de música */}
             <div className={styles["content-musicas"]}>
-                {/* Checa se cardsData possui dados e então mapeia cada objeto de dados para um componente CardMusica */}
                 {cardsData && cardsData.map((data, index) => (
-                    // Cada CardMusica é colocado dentro de um div com chave e estilos aplicados
                     <div key={index} className={styles["quadrado"]}>
-                        {/* Renderiza um CardMusica para cada conjunto de dados, passando as propriedades necessárias */}
                         <CardMusica
                             artista={data.artista}
                             nomeMusica={data.nomeMusica}

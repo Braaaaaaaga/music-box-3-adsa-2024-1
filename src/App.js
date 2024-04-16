@@ -1,30 +1,21 @@
-// Importa a instância configurada do Axios para fazer requisições HTTP.
-import api from "./api";
+// Importa o componente Rotas de "./routes", usado para definir as rotas da aplicação
+import Rotas from "./routes";
+// Importa os estilos CSS do react-toastify para utilizar os componentes de notificação
+import 'react-toastify/dist/ReactToastify.css';
+// Importa o componente ToastContainer do react-toastify, que será usado para mostrar as notificações
+import { ToastContainer } from 'react-toastify';
 
-// Define o componente App, o principal do aplicativo.
+// Define o componente App, que é o componente principal da aplicação
 function App() {
-
-  // Função para fazer uma requisição GET usando a instância do Axios importada.
-  function listar() {
-    api.get()
-      .then((respostaObtida) => {
-        // Se a requisição for bem-sucedida, exibe a resposta no console.
-        console.log(respostaObtida);
-      })
-      .catch((erroOcorrido) => {
-        // Se a requisição falhar, exibe o erro no console.
-        console.log(erroOcorrido);
-      })
-  }
-
-  // Renderiza o conteúdo do componente, incluindo um título e um botão que, ao ser clicado, chama a função `listar`.
   return (
     <>
-      <h1>Titulo</h1>
-      <button onClick={listar}>Listar</button>
+      {/* Inclui o componente Rotas, que é responsável por renderizar as diferentes rotas da aplicação */}
+      <Rotas />
+      {/* Inclui o componente ToastContainer, que renderiza um container para as mensagens de notificação */}
+      <ToastContainer />
     </>
   );
 }
 
-// Torna o componente App disponível para uso em outras partes do aplicativo.
+// Exporta o componente App para que possa ser utilizado em outras partes da aplicação
 export default App;
