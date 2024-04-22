@@ -71,3 +71,74 @@ function Adicionar() {
     );
 }
 export default Adicionar; // Exporta o componente Adicionar
+
+// import React, { useState } from 'react';
+// import { toast } from 'react-toastify';
+// import api from "../../api";
+// import { useNavigate } from 'react-router-dom';
+// import NavBar from '../../components/navbar/NavBar';
+// import styles from './Adicionar.module.css';
+// import logo from "../../utils/assets/logo.svg";
+// import imgCantor from "../../utils/assets/pessoa-ouvindo-disco.svg";
+
+// function Adicionar() {
+//     const navigate = useNavigate();
+//     // Objeto único de estado para armazenar todas as propriedades
+//     const [musica, setMusica] = useState({
+//         nomeMusica: '',
+//         artista: '',
+//         genero: '',
+//         ano: '',
+//         imagem: ''
+//     });
+
+//     const handleSave = () => {
+//         api.post('', musica).then(() => {
+//             toast.success("Novo Card criado com sucesso!");
+//             sessionStorage.setItem("editado", JSON.stringify(musica));
+//             navigate("/musicas");
+//         }).catch(() => {
+//             toast.error("Ocorreu um erro ao salvar os dados, por favor, tente novamente.");
+//         });
+//     };
+
+//     // Atualiza o objeto de estado para cada mudança de input
+//     const handleInputChange = (event) => {
+//         const { name, value } = event.target; // recupera o "nome" da input, junto com seu valor para atualizar o GET
+//         setMusica(prevMusica => ({
+//             ...prevMusica,
+//             [name]: value // Atualiza a chave correta no objeto de estado
+//         }));
+//     };
+
+//     const handleBack = () => {
+//         navigate("/musicas");
+//     };
+
+//     return (
+//         <>
+//             <NavBar logoInicio={logo} />
+//             <div className={styles["container-adicionar"]}>
+//                 <div className={styles["secao-esquerda-adicionar"]}>
+//                     <form>
+//                         <h1>Adicionar</h1>
+//                         <input type="text" name="nomeMusica" value={musica.nomeMusica} placeholder="Nome da música" onChange={handleInputChange} />
+//                         <input type="text" name="artista" value={musica.artista} placeholder="Artista" onChange={handleInputChange} />
+//                         <input type="text" name="genero" value={musica.genero} placeholder="Gênero" onChange={handleInputChange} />
+//                         <input type="text" name="ano" value={musica.ano} placeholder="Ano de Lançamento" onChange={handleInputChange} />
+//                         <input type="text" name="imagem" value={musica.imagem} placeholder="URL da Imagem" onChange={handleInputChange} />
+//                         <div className={styles["buttons-container"]}>
+//                             <button type="button" onClick={handleSave}>Salvar</button>
+//                             <button type="button" onClick={handleBack}>Cancelar</button>
+//                         </div>
+//                     </form>
+//                 </div>
+//                 <div className={styles["secao-direita-adicionar"]}>
+//                     <img src={imgCantor} alt="Imagem de uma pessoa ouvindo música" />
+//                 </div>
+//             </div>
+//         </>
+//     );
+// }
+
+// export default Adicionar;
