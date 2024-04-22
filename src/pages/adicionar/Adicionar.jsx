@@ -6,6 +6,7 @@ import logo from "../../utils/assets/logo.svg"; // Importa um arquivo de logo pa
 import { useNavigate } from "react-router-dom"; // Importa o hook useNavigate para redirecionamento de rotas
 import NavBar from "../../components/navbar/NavBar"; // Importa o componente NavBar para a barra de navegação
 import imgCantor from "../../utils/assets/pessoa-ouvindo-disco.svg"; // Importa uma imagem ilustrativa
+import { inputSomenteTexto } from "../../utils/globals"; // Import da função global
 
 function Adicionar() {
     const navigate = useNavigate(); // Inicializa o hook de navegação
@@ -51,7 +52,8 @@ function Adicionar() {
                     <form>
                         <h1>Adicionar</h1> {/* Título do formulário */}
                         {/* Inputs para cada campo do formulário */}
-                        <input type="text" value={nomeMusica} placeholder="Nome da música" onChange={(e) => handleInputChange(e, setNomeMusica)} />
+                        {/* Chamar a função importada no onInput */}
+                        <input type="text" onInput={inputSomenteTexto} value={nomeMusica} placeholder="Nome da música" onChange={(e) => handleInputChange(e, setNomeMusica)} />
                         <input type="text" value={artista} placeholder="Artista" onChange={(e) => handleInputChange(e, setArtista)} />
                         <input type="text" value={genero} placeholder="Gênero" onChange={(e) => handleInputChange(e, setGenero)} />
                         <input type="text" value={ano} placeholder="Ano de Lançamento" onChange={(e) => handleInputChange(e, setAno)} />
