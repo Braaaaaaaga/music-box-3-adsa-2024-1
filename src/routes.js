@@ -7,6 +7,7 @@ import Musicas from "./pages/musicas/Musicas";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/notFound/NotFound";
 import Adicionar from "./pages/adicionar/Adicionar";
+import Editar from "./pages/editar/Editar";
 
 // Define o componente Rotas, que configura as rotas da aplicação.
 function Rotas() {
@@ -26,6 +27,7 @@ function Rotas() {
                     <Route path="*" element={<NotFound />} />
                     {/* Define a rota para a página de adicionar novas músicas ("/adicionar") e associa ao componente Adicionar. */}
                     <Route path="/adicionar" element={<Adicionar />} />
+                    <Route path="/editar/:idCard" element={<Editar />} />
                 </Routes>
             </BrowserRouter>
         </>
